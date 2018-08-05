@@ -1,0 +1,62 @@
+@import 'src/app/scss/variables.scss';
+
+$image-height: 120px;
+
+.actor-summary {
+  cursor: pointer;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+  width: 90%;
+  height: 120px;
+  background: white;
+  margin: 20px auto;
+
+  .left-panel {
+    float: left;
+    width: 10%;
+    height: $image-height;
+    background: white;
+  }
+  .right-panel {
+    margin-left: 120px;
+    height: $image-height;
+    background: white;
+  }
+
+  .movie-image-placeholder {
+    height: $image-height;
+    width: 80px;
+    background: $background-color;
+
+    p {
+      text-align: center;
+      padding-top: 42px;
+      opacity: 0.3;
+      font-size: smaller;
+    }
+  }
+
+  .actor-list-image {
+    height: $image-height;
+    max-width: 80px;
+  }
+
+  .actor-name {
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 35px;
+  }
+
+  .character-name {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .extra-padding {
+    padding-top: 49px;
+  }
+
+  .more-link {
+    padding-top: 5px;
+  }
+}

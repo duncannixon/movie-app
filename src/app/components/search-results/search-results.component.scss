@@ -1,0 +1,24 @@
+@import 'src/app/scss/variables.scss';
+
+.search-results {
+  color: $primary-color;
+  background-color: $background-color;
+}
+
+.result-panel {
+  text-align: center;
+  top: 45px;
+}
+
+.result-count {
+  font-size: small;
+  text-align: center;
+}
+
+.button-row {
+  margin-bottom: 20px;
+}
+
+.next-button {
+  float: right;
+}

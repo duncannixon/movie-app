@@ -1,0 +1,15 @@
+<div class="actor-summary" *ngIf="actor">
+  <div class="left-panel">
+    <div *ngIf="hasImage">
+      <img class="actor-list-image" src="{{actor.profile_image_url}}">
+    </div>
+    <div *ngIf="!hasImage" class="movie-image-placeholder">
+      <p>Awaiting image</p>
+    </div>
+  </div>
+  <div class="right-panel">
+    <div class="actor-name" [ngClass]="{ 'extra-padding': !actor.character }">{{ actor.name }}</div>
+    <div *ngIf="actor.character" class="character-name">as {{ actor.character }}</div>
+    <div class="more-link">Read more</div>
+  </div>
+</div>

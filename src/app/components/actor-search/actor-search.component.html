@@ -1,0 +1,22 @@
+<div class="actor-search-component">
+  <h1 id="search-title" class="search-title">Actor Search</h1>
+
+  <form #searchForm="ngForm">
+    <div class="search-form">
+      <input
+        id="search-term"
+        class="search-term"
+        name="search-term"
+        type="text"
+        [(ngModel)]="searchTerm"
+        placeholder="Enter actor to search for"
+        maxlength="50">
+
+      <button
+        id="search-button"
+        class="search-button"
+        type="submit"
+        (click)="performSearch()">Search</button>
+    </div>
+  </form>
+</div>

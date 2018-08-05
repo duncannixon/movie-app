@@ -1,0 +1,13 @@
+@import 'src/app/scss/variables.scss';
+
+footer {
+  height: $footer-height;
+  background: linear-gradient(to bottom, $primary-color, #622c2a);
+  color: white;
+  text-align: center;
+
+  .copyright {
+    padding-top: 120px;
+    font-size: 12px;
+  }
+}

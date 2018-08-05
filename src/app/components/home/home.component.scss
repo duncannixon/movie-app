@@ -1,0 +1,21 @@
+.home {
+  height: -webkit-calc(100vh - 281px);
+  width: 100%;
+  background: url("/assets/images/film.jpg") no-repeat center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .home-text-panel {
+    padding: 50px;
+
+    .welcome-title {
+      color: white;
+      padding: 0;
+    }
+
+    .welcome-message {
+      color: white;
+      margin-top: 20px;
+    }
+  }
+}

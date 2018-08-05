@@ -1,0 +1,60 @@
+@import 'src/app/scss/variables.scss';
+
+$image-height: 120px;
+
+.actor {
+  margin-top: 10px;
+}
+
+.actor-profile-image {
+  height: 300px;
+  float: left;
+  border: solid 5px white;
+  margin: 20px;
+}
+
+.actor-profile-image-placeholder {
+  height: $image-height;
+  width: 66.6563px;
+  background: $background-color;
+
+  p {
+    text-align: center;
+    padding-top:33px;
+    opacity: 0.3;
+    font-size: smaller;
+  }
+
+  img {
+    float: left;
+    margin-right:  50px;
+    border: solid 5px white;
+    top: -30px;
+    position:  relative;
+    left: 20px;
+  }
+}
+
+.actor-name {
+  padding-top: 50px;
+  padding-left: 250px;
+  background-color: #4a4a4a;
+  color: white;
+}
+
+.actor-bio {
+  min-height: 225px;
+  padding-top: 20px;
+  padding-right: 10%;
+  padding-left: 250px;
+  padding-bottom: 20px;
+  background-color: #4a4a4a;
+  color: white;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.filmography-section {
+  padding: 20px;
+  background-color: $background-color;
+}

@@ -1,0 +1,15 @@
+@import 'src/app/scss/variables.scss';
+
+.actor-list {
+  background-color: $background-color;
+  margin: 20px;
+
+  .no-results {
+    height: -webkit-calc(100vh - 382px);
+    text-align: left;
+
+    .search-again {
+      margin-top: 20px;
+    }
+  }
+}

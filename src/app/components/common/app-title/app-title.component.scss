@@ -1,0 +1,21 @@
+@import 'src/app/scss/variables.scss';
+
+.app-title {
+  color: white;
+  background: linear-gradient(to top right, $primary-color, #622c2a);
+  padding: 20px;
+  text-align: center;
+}
+
+a {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: white;
+}

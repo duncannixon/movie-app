@@ -1,0 +1,15 @@
+<h1 class="search-results">Search results</h1>
+
+<app-movie-list *ngIf="isMovieSearch" id="movie-list" [movies]="movies"></app-movie-list>
+
+<app-actor-list *ngIf="!isMovieSearch" id="actor-list" [actors]="actors"></app-actor-list>
+
+<div class="result-panel">
+  <p id="result-page-count" class="result-page-count">Page: {{ paging.page }} / {{ paging.total_pages }}</p>
+  <p id="result-total-count" class="result-total-count">Total results: {{ paging.total_results }}</p>
+</div>
+
+<div class="button-row">
+  <button id="prev-button" class="prev-button" (click)="onPreviousPage()">Previous page</button>
+  <button id="next-button" class="next-button" (click)="onNextPage()">Next page</button>
+</div>

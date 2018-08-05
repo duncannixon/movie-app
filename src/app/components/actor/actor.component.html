@@ -1,0 +1,18 @@
+<div class="actor" *ngIf="actor">
+  <div *ngIf="hasImage">
+    <img id="actor-profile-image" class="actor-profile-image" src="{{actor.profile_path_url}}">
+  </div>
+  <div *ngIf="!hasImage" id="actor-profile-image-placeholder" class="actor-profile-image-placeholder">
+    <p id="awaiting-image-message">Awaiting image</p>
+  </div>
+
+  <h1 id="actor-name" class="actor-name">{{ actor.name }}</h1>
+
+  <p id="actor-bio" class="actor-bio">{{ actor.biography }}</p>
+
+  <div class="filmography-section">
+    <h2 id="filmography-heading">Filmography</h2>
+
+    <app-movie-list id="movie-list" [movies]="castCredits"></app-movie-list>
+  </div>
+</div>

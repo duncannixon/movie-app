@@ -1,0 +1,28 @@
+<div class="movie-detail" *ngIf="movie">
+
+  <div *ngIf="hasBackdropImage">
+    <div><img id="backdrop-image" class="backdrop-image" src="{{movie.backdrop_url}}">
+  </div>
+  <div *ngIf="!hasBackdropImage" id="movie-image-placeholder" class="movie-image-placeholder">
+    <p>Awaiting image</p>
+  </div>
+
+  <div><img id="movie-poster" class="movie-poster" src="{{movie.poster_url}}"></div>
+
+  <div class="movie-details-panel">
+    <div class="inner-panel">
+      <h1 id="movie-title" class="movie-title">{{ movie.title }}</h1>
+      <p id="movie-overview" class="movie-overview">{{ movie.overview }}</p>
+      <p id="release-date" class="release-date">Released: {{ movie.release_date_formatted }}</p>
+    </div>
+  </div>
+
+  <div class="cast-section" *ngIf="castLoaded">
+    <h2 id="cast-heading">Cast</h2>
+    <app-actor-list id="actor-list" [actors]="actors"></app-actor-list>
+  </div>
+</div>
+
+<div *ngIf="!movie" id="movie-not-found-message">
+  Movie not found
+</div>

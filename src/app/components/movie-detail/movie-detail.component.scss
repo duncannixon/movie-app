@@ -1,0 +1,50 @@
+@import 'src/app/scss/variables.scss';
+
+.movie-detail {
+
+  margin-top: 10px;
+
+  .backdrop-image {
+    width: 100%;
+  }
+
+  .movie-poster {
+    border: solid 5px white;
+    width: 25%;
+    max-width: 170px;
+    float: right;
+    position: relative;
+    top: -50px;
+    right: 20px;
+  }
+
+  .movie-details-panel {
+    background-color: #4a4a4a;
+    color: white;
+    min-height: 250px;
+
+    .inner-panel {
+      padding: 20px;
+      width: 60%;
+
+      .movie-title {
+        padding: 0;
+      }
+
+      .movie-overview {
+        font-size: 14px;
+        padding-top: 20px;
+      }
+
+      .release-date {
+        margin-top: 20px;
+        font-size: smaller;
+      }
+    }
+  }
+
+  .cast-section {
+    background-color: $background-color;
+    padding: 20px;
+  }
+}

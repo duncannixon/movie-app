@@ -1,0 +1,38 @@
+@import 'src/app/scss/variables.scss';
+
+.movie-list {
+
+  .flex-item-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+    background-color: $background-color;
+
+    .flex-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      flex: 10 0 250px;
+    }
+  }
+
+  .results-display {
+    margin: 20px;
+    text-align: right;
+  }
+
+  .no-results {
+    height: -webkit-calc(100vh - 382px);
+    text-align: left;
+
+    .search-again {
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import './src/app/scss/variables.scss';
+
+.actor-search-component {
+  color: $primary-color;
+  width: 100%;
+  background: url("/assets/images/john-wayne.jpg") no-repeat center fixed;
+  background-size: cover;
+
+  .search-title {
+    color: white;
+  }
+
+  .search-form {
+    text-align: center;
+    height: -webkit-calc(100vh - 442px);
+    padding: 50px 20px;
+
+    .search-term {
+      width: 40%;
+      height: 28px;
+      padding: 5px;
+      border: 5px solid $primary-color;
+    }
+
+    .search-button {
+      margin-left: 10px;
+    }
+  }
+}

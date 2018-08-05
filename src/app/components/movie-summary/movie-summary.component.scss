@@ -1,0 +1,52 @@
+@import './src/app/scss/variables.scss';
+
+.movie-summary {
+  margin: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  width: 300px;
+  background-color: white;
+
+  .image-container {
+    cursor: pointer;
+  }
+
+  .movie-image {
+    max-width:100%;
+    height:auto;
+  }
+
+  .movie-image-placeholder {
+    height: 168.594px;
+    background: $background-color;
+
+    p {
+      text-align: center;
+      padding-top: 70px;
+      opacity: 0.3;
+    }
+  }
+
+  .movie-title {
+    height: 50px;
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+
+  .movie-overview {
+    padding: 0 20px 20px 20px;
+    height: 80px;
+    overflow: hidden;
+    font-size: 14px;
+  }
+
+  // .more-link {
+  //   padding: 20px;
+  //   text-align: right;
+  //   font-size: smaller;
+  //   color: $secondary-color;
+  //   cursor: pointer;
+  // }
+}
+
+
+

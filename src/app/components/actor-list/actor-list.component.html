@@ -1,0 +1,10 @@
+<div class="actor-list">
+  <div *ngFor="let actor of actors" (click)=showActor(actor)>
+    <app-actor-summary [actor]="actor"></app-actor-summary>
+  </div>
+
+  <div *ngIf="actors && actors.length === 0" class="no-results">
+    <p>No actors to display</p>
+    <p class="search-again"><a routerLink="/actor-search">Search again</a></p>
+  </div>
+</div>

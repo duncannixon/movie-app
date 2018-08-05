@@ -1,0 +1,52 @@
+@import './variables.scss';
+
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  background-color: $background-color;
+  height:100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+h1 {
+  padding: 10px;
+}
+
+button {
+  transition-duration: 0.2s;
+  background-color: $button-color;
+
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: $button-highlight-color;
+  color: white;
+}
+
+.more-link {
+  font-weight: 600;
+  padding: 20px;
+  text-align: right;
+  font-size: smaller;
+  color: $secondary-color;
+  cursor: pointer;
+}

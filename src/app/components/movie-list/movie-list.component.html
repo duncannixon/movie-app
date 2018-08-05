@@ -1,0 +1,15 @@
+<div class="movie-list">
+  <div *ngIf="movies" class="flex-item-container">
+
+    <div class="flex-item" *ngFor="let movie of movies">
+      <app-movie-summary [movie]=movie></app-movie-summary>
+    </div>
+  </div>
+
+  <div class="results-display">
+    <div *ngIf="movies && movies.length === 0" class="no-results">
+      <p>No movie results to display</p>
+      <p class="search-again"><a routerLink="/movie-search">Search again</a></p>
+    </div>
+  </div>
+</div>

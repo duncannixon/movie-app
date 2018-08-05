@@ -1,0 +1,23 @@
+<div class="movie-summary">
+
+  <div class="image-container" (click)="selectMovie()">
+    <div *ngIf="hasImage">
+      <img class="movie-image" src="{{movie.backdrop_url}}">
+    </div>
+
+    <div *ngIf="!hasImage" class="movie-image-placeholder">
+      <p>Awaiting image</p>
+    </div>
+  </div>
+
+  <h2 class="movie-title">{{ title }}</h2>
+  <p class="movie-overview">
+    {{ overview }}
+  </p>
+
+  <div class="more-link">
+    <a (click)="selectMovie()">Read more</a>
+  </div>
+</div>
+
+
